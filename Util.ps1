@@ -10,3 +10,21 @@
 #WMI
 #https://docs.microsoft.com/zh-cn/windows/win32/cimwin32prov/computer-system-hardware-classes
 #Get-WmiObject Win32_DiskDrive |Format-List -Property *
+
+function Write-Star {
+    param (
+        [string]$content
+    )
+
+    $length = 100
+    $format = ""
+    
+    for($i=0;$i -lt $length;$i++)
+    {
+       $format += "#"
+    }
+
+    Write-Host $format
+    Write-Host "`t`t`t`t`tComputer Info"
+    Write-Host $format    
+}
