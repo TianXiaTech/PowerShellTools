@@ -25,6 +25,6 @@ function Write-Star {
     }
 
     Write-Host $format
-    Write-Host "`t`t`t`t`tComputer Info"
+    Write-Host "`t`t`t`t`t$content"
     Write-Host $format    
 }
